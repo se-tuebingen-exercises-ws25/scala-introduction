@@ -7,3 +7,8 @@ Topics covered so far:
 - build systems (look at `build.sbt` where we added a dependency to parse JSON in `src/main/scala/hello.scala`)
 - imperative programming (look at `src/main/scala/imperative.scala` and the corresponding Java file)
 - functional programming (look at `src/main/scala/fp.scala` and the corresponding Racket file)
+
+
+The worksheet files (ending in `worksheet.sc`) are transcripts of the live demos in the lecture.
+Please be aware that these evolved in the lecture and do not reflect all intermediate states (and all of the content 
+for that matter). 

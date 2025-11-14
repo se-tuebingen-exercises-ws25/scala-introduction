@@ -7,14 +7,15 @@ import DefaultJsonProtocol.*
 
 @main
 def sayHello = {
-  println("Hey, what's your name???? (please press <Enter> after entering your name)")
+  println("Hey, what's your name? (please press <Enter> after entering your name)")
 
-  // Javascript object notation (JSON)
-  // "{ \"name\": \"jonathan\" }"
+  // { "name": "Jonathan" }
 
-  val input = readLine()
-  val jsonObject = JsonParser(ParserInput(input)).asJsObject
-  val name = jsonObject.fields("name").toString
+  val jsonInput = readLine()
+
+  val parsed = JsonParser(ParserInput(jsonInput)).asJsObject
+
+  val name = parsed.fields("name")
 
   val greeting =
     s"""Hello there, ${name}!
